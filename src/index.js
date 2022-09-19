@@ -8,11 +8,3 @@ createRoot(document.getElementById("root")).render(
     <App />
   </React.StrictMode>
 );
-
-// ReactDOM.createRoot(document.getElementById("root")).render(
-//   <React.StrictMode>
-//     <BrowserRouter>
-
-//     </BrowserRouter>
-//   </React.StrictMode>
-// );
