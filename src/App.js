@@ -3,6 +3,7 @@ import { Outlet } from "react-router";
 import { Container } from "./components/Container/Container";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
 import { Header } from "./components/Header/Header";
+import { Quote } from "./components/Quote/Quote";
 
 const router = createBrowserRouter([
   {
@@ -12,20 +13,10 @@ const router = createBrowserRouter([
         <Header />
         <Container>
           <Outlet />
-          <p>
-            «У хорошому дизайні функціональність завжди є первинною, незалежно
-            від форм. Але вона не повинна гнобити емоції» Giorgio Saporiti «У
-            хорошому дизайні функціональність завжди є первинною, незалежно від
-            форм. Але вона не повинна гнобити емоції» Giorgio Saporiti «У
-            хорошому дизайні функціональність завжди є первинною, незалежно від
-            форм. Але вона не повинна гнобити емоції» Giorgio Saporiti «У
-            хорошому дизайні функціональність завжди є первинною, незалежно від
-            форм. Але вона не повинна гнобити емоції» Giorgio Saporiti «У
-            хорошому дизайні функціональність завжди є первинною, незалежно від
-            форм. Але вона не повинна гнобити емоції» Giorgio Saporiti «У
-            хорошому дизайні функціональність завжди є первинною, незалежно від
-            форм. Але вона не повинна гнобити емоції» Giorgio Saporiti
-          </p>
+          <Quote
+            quote="«У хорошому дизайні функціональність завжди є первинною, незалежно від форм. Але вона не повинна гнобити емоції»"
+            author="Giorgio Saporiti"
+          />
         </Container>
       </>
     ),
