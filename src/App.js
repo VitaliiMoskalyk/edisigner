@@ -1,17 +1,32 @@
-import { createBrowserRouter, RouterProvider, NavLink } from "react-router-dom";
+import { createBrowserRouter, RouterProvider } from "react-router-dom";
 import { Outlet } from "react-router";
 import { Container } from "./components/Container/Container";
 import ErrorPage from "./pages/ErrorPage/ErrorPage";
+import { Header } from "./components/Header/Header";
 
 const router = createBrowserRouter([
   {
     path: "/",
     element: (
       <>
-        <h1>there will be header</h1>
-        <NavLink to="projects">Go to project page</NavLink>
-        <NavLink to="contacts">Go to contacts page</NavLink>
-        <Outlet />
+        <Header />
+        <Container>
+          <Outlet />
+          <p>
+            «У хорошому дизайні функціональність завжди є первинною, незалежно
+            від форм. Але вона не повинна гнобити емоції» Giorgio Saporiti «У
+            хорошому дизайні функціональність завжди є первинною, незалежно від
+            форм. Але вона не повинна гнобити емоції» Giorgio Saporiti «У
+            хорошому дизайні функціональність завжди є первинною, незалежно від
+            форм. Але вона не повинна гнобити емоції» Giorgio Saporiti «У
+            хорошому дизайні функціональність завжди є первинною, незалежно від
+            форм. Але вона не повинна гнобити емоції» Giorgio Saporiti «У
+            хорошому дизайні функціональність завжди є первинною, незалежно від
+            форм. Але вона не повинна гнобити емоції» Giorgio Saporiti «У
+            хорошому дизайні функціональність завжди є первинною, незалежно від
+            форм. Але вона не повинна гнобити емоції» Giorgio Saporiti
+          </p>
+        </Container>
       </>
     ),
     errorElement: <ErrorPage />,
@@ -35,12 +50,10 @@ const router = createBrowserRouter([
 
 function App() {
   return (
-    <Container>
-      <RouterProvider
-        router={router}
-        fallbackElement={<h1>hjsgfkjsdygfkurybvfeskuygfkuygfvkdrhbvgfes</h1>}
-      />
-    </Container>
+    <RouterProvider
+      router={router}
+      fallbackElement={<h1>hjsgfkjsdygfkurybvfeskuygfkuygfvkdrhbvgfes</h1>}
+    />
   );
 }
 
