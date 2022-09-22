@@ -1,5 +1,6 @@
 {
   "name": "edisigner",
+  "homepage": "https://VitaliiMoskalyk.github.io/edisigner/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -11,7 +12,6 @@
     "@testing-library/user-event": "^13.5.0",
     "modern-normalize": "^1.1.0",
     "react": "^18.2.0",
-    "react-animations": "^1.0.0",
     "react-dom": "^18.2.0",
     "react-router": "^6.4.0",
     "react-router-dom": "^6.4.0",
