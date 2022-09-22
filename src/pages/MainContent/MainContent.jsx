@@ -9,6 +9,7 @@ export const MainContent = () => {
         quote="«У хорошому дизайні функціональність завжди є первинною, незалежно від форм. Але вона не повинна гнобити емоції»"
         author="Giorgio Saporiti"
       />
+
       <MainList data={data} />
     </>
   );
