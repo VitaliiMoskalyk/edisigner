@@ -25,7 +25,13 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return <RouterProvider router={router} fallbackElement={<h1>fallback</h1>} />;
+  return (
+    <RouterProvider
+      router={router}
+      fallbackElement={<h1>fallback</h1>}
+      basename="/edisigner/"
+    />
+  );
 }
 
 export default App;
