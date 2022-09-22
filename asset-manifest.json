@@ -1,0 +1,17 @@
+{
+  "files": {
+    "main.css": "/edisigner/static/css/main.3cd66080.css",
+    "main.js": "/edisigner/static/js/main.a5b70ec2.js",
+    "static/media/main_2.jpg": "/edisigner/static/media/main_2.0f31019a6b6ead5b3368.jpg",
+    "static/media/main_1.JPG": "/edisigner/static/media/main_1.16c6183f05dc0bc2f59b.JPG",
+    "static/media/main_3.png": "/edisigner/static/media/main_3.0e92620bb5752311322b.png",
+    "index.html": "/edisigner/index.html",
+    "static/media/sprite.svg": "/edisigner/static/media/sprite.fe2aad60922e22fe81a51555296a7bd9.svg",
+    "main.3cd66080.css.map": "/edisigner/static/css/main.3cd66080.css.map",
+    "main.a5b70ec2.js.map": "/edisigner/static/js/main.a5b70ec2.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.3cd66080.css",
+    "static/js/main.a5b70ec2.js"
+  ]
+}
