@@ -29,14 +29,6 @@ export const Wrapper = styled.div`
   }
 `;
 
-export const Text = styled.p`
-  /* font-style: normal;
-  font-weight: 400;
-  font-size: 24px;
-  line-height: 29px;
-  text-align: right; */
-`;
-
 export const Author = styled.span`
   font-size: 12px;
   line-height: 15px;

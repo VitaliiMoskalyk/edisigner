@@ -1,35 +1,20 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Outlet } from "react-router";
-import { Container } from "./components/Container/Container";
-import ErrorPage from "./pages/ErrorPage/ErrorPage";
-import { Header } from "./components/Header/Header";
-import { Quote } from "./components/Quote/Quote";
+import { ErrorPage, Header, MainContent, Projects } from "./pages";
 
 const router = createBrowserRouter([
   {
     path: "/",
-    element: (
-      <>
-        <Header />
-        <Container>
-          <Outlet />
-          <Quote
-            quote="«У хорошому дизайні функціональність завжди є первинною, незалежно від форм. Але вона не повинна гнобити емоції»"
-            author="Giorgio Saporiti"
-          />
-        </Container>
-      </>
-    ),
+    element: <Header />,
     errorElement: <ErrorPage />,
 
     children: [
       {
         index: true,
-        element: <div>main</div>,
+        element: <MainContent />,
       },
       {
         path: "projects",
-        element: <div>projects</div>,
+        element: <Projects />,
       },
       {
         path: "contacts",
@@ -40,12 +25,7 @@ const router = createBrowserRouter([
 ]);
 
 function App() {
-  return (
-    <RouterProvider
-      router={router}
-      fallbackElement={<h1>hjsgfkjsdygfkurybvfeskuygfkuygfvkdrhbvgfes</h1>}
-    />
-  );
+  return <RouterProvider router={router} fallbackElement={<h1>fallback</h1>} />;
 }
 
 export default App;
