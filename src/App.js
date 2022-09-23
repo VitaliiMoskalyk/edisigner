@@ -24,7 +24,7 @@ const router = createBrowserRouter(
       ],
     },
   ],
-  { basename: "/edisigner" }
+  { basename: "/edisigner/" }
 );
 
 function App() {
