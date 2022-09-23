@@ -1,6 +1,6 @@
 {
   "name": "edisigner",
-  "homepage": "https://VitaliiMoskalyk.github.io/edisigner/",
+  "homepage": ".",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
