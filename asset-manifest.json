@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/edisigner/static/css/main.6d130945.css",
-    "main.js": "/edisigner/static/js/main.cf0818f8.js",
+    "main.js": "/edisigner/static/js/main.e409942c.js",
     "static/media/projects_lermontov.JPG": "/edisigner/static/media/projects_lermontov.e39df665f351d4e60c22.JPG",
     "static/media/main_2.jpg": "/edisigner/static/media/main_2.0f31019a6b6ead5b3368.jpg",
     "static/media/main_1.JPG": "/edisigner/static/media/main_1.16c6183f05dc0bc2f59b.JPG",
@@ -11,10 +11,10 @@
     "index.html": "/edisigner/index.html",
     "static/media/sprite.svg": "/edisigner/static/media/sprite.fe2aad60922e22fe81a51555296a7bd9.svg",
     "main.6d130945.css.map": "/edisigner/static/css/main.6d130945.css.map",
-    "main.cf0818f8.js.map": "/edisigner/static/js/main.cf0818f8.js.map"
+    "main.e409942c.js.map": "/edisigner/static/js/main.e409942c.js.map"
   },
   "entrypoints": [
     "static/css/main.6d130945.css",
-    "static/js/main.cf0818f8.js"
+    "static/js/main.e409942c.js"
   ]
 }
