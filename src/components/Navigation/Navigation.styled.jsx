@@ -7,7 +7,7 @@ export const Nav = styled.nav`
 
 export const Wrapper = styled.ul`
   display: flex;
-  justify-content: space-between;
+  justify-content: space-evenly;
 `;
 
 export const NavigateLink = styled(NavLink)`
@@ -15,6 +15,6 @@ export const NavigateLink = styled(NavLink)`
 
   font-style: italic;
   font-weight: 500;
-  font-size: 32px;
+  font-size: 24px;
   line-height: 39px;
 `;

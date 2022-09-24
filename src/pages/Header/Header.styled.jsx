@@ -8,17 +8,18 @@ export const Wrapper = styled.header`
 
   display: flex;
   justify-content: space-between;
-
+  align-items: center;
+  width: 100%;
   padding: 0 25px;
-  width: 375px;
+  min-width: 375px;
 
   @media (min-width: 768px) {
     padding: 10px 40px;
-    width: 768px;
+    min-width: 768px;
   }
   @media (min-width: 1440px) {
     padding: 40px 100px;
-    width: 1440px;
+    min-width: 1440px;
   }
 
   background: linear-gradient(

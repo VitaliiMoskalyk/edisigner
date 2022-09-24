@@ -1,9 +1,9 @@
-import { Wrapper, Author } from "./Quote.styled";
+import { Wrapper, Author, Article } from "./Quote.styled";
 
 export const Quote = ({ quote, author }) => {
   return (
     <Wrapper>
-      <p>{quote}</p>
+      <Article>{quote}</Article>
       <Author>{author}</Author>
     </Wrapper>
   );

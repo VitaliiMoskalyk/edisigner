@@ -6,7 +6,8 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  height: 820px;
+  height: 100vh;
+
   padding: 10px;
 
   font-style: normal;
@@ -16,13 +17,13 @@ export const Wrapper = styled.div`
   text-align: right;
 
   @media (min-width: 768px) {
-    height: 960px;
+    /* height: 960px; */
 
     font-size: 36px;
     line-height: 44px;
   }
   @media (min-width: 1440px) {
-    height: 860px;
+    /* height: 860px; */
 
     font-size: 40px;
     line-height: 48px;
@@ -44,5 +45,11 @@ export const Author = styled.span`
     font-size: 24px;
     line-height: 29px;
     margin-top: 30px;
+  }
+`;
+
+export const Article = styled.p`
+  @media (min-width: 1440px) {
+    max-width: 75%;
   }
 `;
