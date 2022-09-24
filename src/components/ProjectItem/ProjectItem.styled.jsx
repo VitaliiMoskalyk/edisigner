@@ -8,6 +8,9 @@ export const Position = styled.div`
 export const Overlay = styled.div`
   display: flex;
   align-items: center;
+  height: 250px;
+
+  overflow: hidden;
 
   ${(props) => props.left}&& {
     justify-content: flex-start;
@@ -15,9 +18,6 @@ export const Overlay = styled.div`
   ${(props) => props.right}&& {
     justify-content: flex-end;
   }
-
-  height: 250px;
-  overflow: hidden;
 
   @media (min-width: 768px) {
     height: 320px;
@@ -28,8 +28,7 @@ export const Overlay = styled.div`
 `;
 
 export const Img = styled.img`
-  width: 400px;
-  height: fit-content;
+  width: 420px;
 
   @media (min-width: 768px) {
     width: 534px;
