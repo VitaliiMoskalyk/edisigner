@@ -1,5 +1,5 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { ErrorPage, Header, MainContent, Projects } from "./pages";
+import { Contacts, ErrorPage, Header, MainContent, Projects } from "./pages";
 
 const router = createBrowserRouter(
   [
@@ -19,7 +19,7 @@ const router = createBrowserRouter(
         },
         {
           path: "contacts",
-          element: <div>contacts</div>,
+          element: <Contacts />,
         },
       ],
     },
