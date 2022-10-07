@@ -24,4 +24,8 @@ export const Link = styled.a`
 
   color: inherit;
   text-decoration: underline;
+  :hover,
+  :focus {
+    color: grey;
+  }
 `;

@@ -5,6 +5,7 @@ import Slider from "../../components/Slider/Slider";
 import { data } from "../../data/mainPageContent";
 import { data2 } from "../../data/myProjects";
 import { useWindowWidth } from "@react-hook/window-size";
+import { Contacts } from "../Contacts/Contacts";
 
 export const MainContent = () => {
   const useWidth = useWindowWidth();
@@ -22,6 +23,7 @@ export const MainContent = () => {
       ) : (
         <MainList data={data2} position="right" />
       )}
+      {useWidth >= 768 && <Contacts />}
     </>
   );
 };

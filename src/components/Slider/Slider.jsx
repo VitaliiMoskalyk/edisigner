@@ -6,7 +6,7 @@ const Slider = ({ data }) => {
   return (
     <Carousel autoplay effect="fade" easing="linear" touchMove="true">
       {data.map((d, id) => (
-        <ProjectItem data={d} key={id} />
+        <ProjectItem data={d} key={id} right="true" />
       ))}
     </Carousel>
   );

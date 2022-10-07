@@ -7,6 +7,8 @@ export const Nav = styled.nav`
 
 export const Wrapper = styled.ul`
   display: flex;
+  flex-wrap: wrap;
+  /* flex-direction: column; */
   justify-content: space-evenly;
 `;
 
@@ -17,4 +19,8 @@ export const NavigateLink = styled(NavLink)`
   font-weight: 500;
   font-size: 24px;
   line-height: 39px;
+  :hover,
+  :focus {
+    color: grey;
+  }
 `;

@@ -1,6 +1,6 @@
 import main_1 from "../images/main_1.JPG";
 import main_2 from "../images/main_2.jpg";
-import main_3 from "../images/main_3.png";
+import main_3 from "../images/main_3.jpg";
 
 export const data = [
   {
