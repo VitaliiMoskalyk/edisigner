@@ -2,28 +2,27 @@ import styled from "@emotion/styled";
 
 export const ModalWrapper = styled.div`
   position: fixed;
+  left: 0;
+  z-index: 2;
+
   display: flex;
   justify-content: flex-end;
-
-  /* top: 0; */
-  left: 0;
-
   width: 100%;
-  height: auto;
-  background-color: rgba(0, 0, 0, 0.4);
-  /* overflow-y: auto; */
-  z-index: 2;
+  height: 100%;
 `;
 
 export const ModalContent = styled.div`
   display: flex;
   align-items: center;
   width: 100%;
-  height: 100vh;
+  height: 100%;
   width: 100%;
-  max-width: 365px;
 
   padding: 24px;
-  background-color: black;
-  color: white;
+  background-color: white;
+  box-shadow: -18px 20px 59px -7px rgba(0, 0, 0, 0.48);
+
+  @media (min-width: 768px) {
+    max-width: 265px;
+  } ;
 `;

@@ -10,7 +10,7 @@ export const Contacts = () => {
       <li>
         <Link>
           <Svg icon="icon-instagram" width="48" height="48" />
-          {useWidth <= 768 && <Article>дивись фото</Article>}
+          {useWidth <= 1440 && <Article>дивись фото</Article>}
         </Link>
       </li>
       <li>
@@ -19,25 +19,25 @@ export const Contacts = () => {
           placeholder="eugene.pigulsky@gmail.com"
         >
           <Svg icon="icon-gmail" width="48" height="48" />
-          {useWidth <= 768 && <Article>напиши лист</Article>}
+          {useWidth <= 1440 && <Article>напиши лист</Article>}
         </Link>
       </li>
       <li>
         <Link href="tel:+380674800295">
           <Svg icon="icon-smartphone" width="48" height="48" />
-          {useWidth <= 768 && <Article>дзвони</Article>}
+          {useWidth <= 1440 && <Article>дзвони</Article>}
         </Link>
       </li>
       <li>
         <Link href="t-do.ru/+380674800295">
           <Svg icon="icon-telegram" width="48" height="48" />
-          {useWidth <= 768 && <Article>пиши</Article>}
+          {useWidth <= 1440 && <Article>пиши</Article>}
         </Link>
       </li>
       <li>
         <Link>
           <Svg icon="icon-location" width="48" height="48" />
-          {useWidth <= 768 && <Article>я тут - Україна, Одеса</Article>}
+          {useWidth <= 1440 && <Article>я тут - Україна, Одеса</Article>}
         </Link>
       </li>
     </Wrapper>

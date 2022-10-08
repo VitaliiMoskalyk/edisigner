@@ -6,10 +6,10 @@ import { data2 } from "../../data/myProjects";
 export const Projects = () => {
   return (
     <>
-      <Quote
+      {/* <Quote
         quote="«У хорошому дизайні функціональність завжди є первинною, незалежно від форм. Але вона не повинна гнобити емоції»"
         author="Giorgio Saporiti"
-      />
+      /> */}
       <ProjectsNavigation />
       <MainList data={data2} position="right" />
     </>

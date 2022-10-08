@@ -13,17 +13,12 @@ export const Wrapper = styled.header`
   padding: 0 25px;
   min-width: 375px;
 
-  color: ${(props) => (props.isOpen ? "white" : "black")};
+  color: inherit;
   background: linear-gradient(
     180deg,
-    ${(props) =>
-      props.isOpen ? "rgba(0, 0, 0, 1) 0%" : "rgba(255, 255, 255, 1) 50%"},
-    ${(props) =>
-      props.isOpen
-        ? "rgba(0, 0, 0, 0.93) 78%"
-        : "rgba(255, 255, 255, 0.93) 78%"},
-    ${(props) =>
-      props.isOpen ? "rgba(0, 0, 0, 0.5) 99%" : "rgba(255, 255, 255, 0.5) 99%"}
+    rgba(255, 255, 255, 1) 50%,
+    rgba(255, 255, 255, 0.93) 78%,
+    rgba(255, 255, 255, 0.5) 99%
   );
 
   @media (min-width: 768px) {

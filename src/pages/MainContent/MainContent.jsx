@@ -23,7 +23,7 @@ export const MainContent = () => {
       ) : (
         <MainList data={data2} position="right" />
       )}
-      {useWidth >= 768 && <Contacts />}
+      {useWidth >= 1440 && <Contacts />}
     </>
   );
 };

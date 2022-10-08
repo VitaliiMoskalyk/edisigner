@@ -7,12 +7,12 @@ export const Wrapper = styled.ul`
   flex-direction: column;
   margin-top: 150px;
 
-  @media (min-width: 768px) {
+  @media (min-width: 1440px) {
     flex-direction: row;
-    position: fixed;
+    /* position: fixed;
     right: 0;
     bottom: 0;
-    z-index: 2;
+    z-index: 2; */
     /* transform: translateX(-50%); */
     margin: 0;
 
@@ -26,7 +26,7 @@ export const Wrapper = styled.ul`
 
   li {
     margin-bottom: 50px;
-    @media (min-width: 768px) {
+    @media (min-width: 1440px) {
       margin: 0 0 0 25px;
     }
   }

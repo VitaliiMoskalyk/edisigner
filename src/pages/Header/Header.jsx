@@ -18,13 +18,14 @@ export const Header = () => {
     <>
       <Wrapper isOpen={isOpen}>
         <Logo title="EvgDesigner" />
-        {screenWidth > 1440 ? (
+        {screenWidth > 768 ? (
           <Navigation />
         ) : isOpen ? (
           <Svg
             icon="icon-close"
             width="48"
             height="42"
+            fill="#000"
             onClick={() => setIsOpen(!isOpen)}
           />
         ) : (
@@ -36,14 +37,13 @@ export const Header = () => {
           />
         )}
       </Wrapper>
-
       {isOpen && (
         <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
           <Navigation />
         </Modal>
       )}
-
       <Container>
+        {" "}
         <Outlet />
       </Container>
     </>
