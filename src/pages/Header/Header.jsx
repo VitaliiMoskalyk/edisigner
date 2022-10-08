@@ -37,7 +37,15 @@ export const Header = () => {
         )}
       </Wrapper>
 
-      <Container>{isOpen ? <Modal /> : <Outlet />}</Container>
+      {isOpen && (
+        <Modal isOpen={isOpen} onClose={() => setIsOpen(false)}>
+          <Navigation />
+        </Modal>
+      )}
+
+      <Container>
+        <Outlet />
+      </Container>
     </>
   );
 };

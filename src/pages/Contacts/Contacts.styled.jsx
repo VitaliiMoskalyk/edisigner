@@ -10,7 +10,7 @@ export const Wrapper = styled.ul`
   @media (min-width: 768px) {
     flex-direction: row;
     position: fixed;
-    right: 5%;
+    right: 0;
     bottom: 0;
     z-index: 2;
     /* transform: translateX(-50%); */
