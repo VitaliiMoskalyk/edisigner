@@ -1,6 +1,6 @@
 import { MainList } from "../../components/MainList/MainList";
 import { ProjectsNavigation } from "../../components/ProjectsNavigation/ProjectsNavigation";
-import { Quote } from "../../components/Quote/Quote";
+// import { Quote } from "../../components/Quote/Quote";
 import { data2 } from "../../data/myProjects";
 
 export const Projects = () => {
