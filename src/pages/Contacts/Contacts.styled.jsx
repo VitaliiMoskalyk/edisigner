@@ -2,10 +2,10 @@ import styled from "@emotion/styled";
 
 export const Wrapper = styled.ul`
   display: flex;
-  justify-content: center;
+  justify-content: flex-end;
 
-  flex-direction: column;
-  margin-top: 150px;
+  flex-direction: row;
+  /* margin-top: 150px; */
 
   @media (min-width: 1440px) {
     flex-direction: row;
@@ -25,16 +25,15 @@ export const Wrapper = styled.ul`
   }
 
   li {
-    margin-bottom: 50px;
-    @media (min-width: 1440px) {
-      margin: 0 0 0 25px;
-    }
+    /* margin-bottom: 50px; */
+    /* @media (min-width: 1440px) { */
+    margin: 0 0 0 25px;
+    /* } */
   }
 `;
 
 export const Link = styled.a`
   display: flex;
-  align-items: center;
 
   font-style: italic;
   font-weight: 600;

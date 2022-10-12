@@ -1,10 +1,17 @@
 import styled from "@emotion/styled";
+import pict from "./37.jpg";
 
 export const Wrapper = styled.div`
   display: flex;
   align-items: flex-end;
   flex-direction: column;
   justify-content: center;
+
+  /* background-image: url(${pict});
+  background-repeat: no-repeat;
+
+  background-size: cover;
+  background-position: center; */
 
   height: 100vh;
 

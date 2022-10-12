@@ -1,18 +1,35 @@
 import styled from "@emotion/styled";
-import { NavLink } from "react-router-dom";
+import { Link } from "react-router-dom";
 
 export const Nav = styled.nav`
-  width: 50%;
+  width: 100%;
+  @media (min-width: 768px) {
+    width: 50%;
+  }
 `;
 
 export const Wrapper = styled.ul`
   display: flex;
+  justify-content: space-around;
   flex-wrap: wrap;
-  /* flex-direction: column; */
-  justify-content: space-evenly;
+  flex-direction: column;
+
+  margin: 0;
+
+  @media (min-width: 768px) {
+    flex-direction: row;
+  }
+  li {
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 60px;
+    @media (min-width: 768px) {
+      margin-top: 0;
+    }
+  }
 `;
 
-export const NavigateLink = styled(NavLink)`
+export const NavigateLink = styled(Link)`
   color: inherit;
 
   font-style: italic;

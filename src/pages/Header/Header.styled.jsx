@@ -2,6 +2,7 @@ import styled from "@emotion/styled";
 
 export const Wrapper = styled.header`
   position: fixed;
+
   left: 50%;
   z-index: 3;
   transform: translateX(-50%);
@@ -14,6 +15,7 @@ export const Wrapper = styled.header`
   min-width: 375px;
 
   color: inherit;
+
   background: linear-gradient(
     180deg,
     rgba(255, 255, 255, 1) 50%,
