@@ -1,25 +1,16 @@
 {
   "files": {
     "main.css": "/edisigner/static/css/main.aee91a55.css",
-    "main.js": "/edisigner/static/js/main.fa5cc3ca.js",
+    "main.js": "/edisigner/static/js/main.0463e4a4.js",
     "static/media/4.JPG": "/edisigner/static/media/4.87c12a912842807e2f0d.JPG",
     "static/media/5.JPG": "/edisigner/static/media/5.ff29be33ac69a3334d0c.JPG",
     "static/media/3.JPG": "/edisigner/static/media/3.570041446d7312dfaab5.JPG",
     "static/media/6.JPG": "/edisigner/static/media/6.7ed7ea89b41a582363fc.JPG",
     "static/media/1.JPG": "/edisigner/static/media/1.50dcc77bfded0e7260ab.JPG",
-    "static/media/projects_lermontov.JPG": "/edisigner/static/media/projects_lermontov.e39df665f351d4e60c22.JPG",
     "static/media/2.JPG": "/edisigner/static/media/2.7797b5b0dd431ed5b9f6.JPG",
     "static/media/main_2.jpg": "/edisigner/static/media/main_2.0f31019a6b6ead5b3368.jpg",
     "static/media/main_1.JPG": "/edisigner/static/media/main_1.16c6183f05dc0bc2f59b.JPG",
-    "static/media/projects_mukachev.JPG": "/edisigner/static/media/projects_mukachev.d33f2ff6d51b6ac3956a.JPG",
     "static/media/main_3.jpg": "/edisigner/static/media/main_3.21ed96d7506a620610d1.jpg",
-    "static/media/10.jpg": "/edisigner/static/media/10.d76b98b77ec88f85e963.jpg",
-    "static/media/1.jpg": "/edisigner/static/media/1.20200d62ecdb07741b0a.jpg",
-    "static/media/projects_chkalov.jpg": "/edisigner/static/media/projects_chkalov.20200d62ecdb07741b0a.jpg",
-    "static/media/5.jpg": "/edisigner/static/media/5.c1eb854b21dc3dcfab6e.jpg",
-    "static/media/7.jpg": "/edisigner/static/media/7.3312fabd0eb2ebc27f3f.jpg",
-    "static/media/8.jpg": "/edisigner/static/media/8.c6ceeeed52ef1b5386c3.jpg",
-    "static/media/3.jpg": "/edisigner/static/media/3.d92b22d31793853311d7.jpg",
     "static/media/mainContent.jpg": "/edisigner/static/media/mainContent.0498b6439af9064b3130.jpg",
     "static/media/sprite.svg": "/edisigner/static/media/sprite.cf2cd1afd2e899acb2e08b2f085cf007.svg",
     "static/media/revicons.eot": "/edisigner/static/media/revicons.a77de540a38981833f9e.eot",
@@ -27,10 +18,10 @@
     "static/media/revicons.woff": "/edisigner/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/edisigner/index.html",
     "main.aee91a55.css.map": "/edisigner/static/css/main.aee91a55.css.map",
-    "main.fa5cc3ca.js.map": "/edisigner/static/js/main.fa5cc3ca.js.map"
+    "main.0463e4a4.js.map": "/edisigner/static/js/main.0463e4a4.js.map"
   },
   "entrypoints": [
     "static/css/main.aee91a55.css",
-    "static/js/main.fa5cc3ca.js"
+    "static/js/main.0463e4a4.js"
   ]
 }
