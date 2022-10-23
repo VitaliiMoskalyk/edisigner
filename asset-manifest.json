@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/edisigner/static/css/main.aee91a55.css",
-    "main.js": "/edisigner/static/js/main.0463e4a4.js",
+    "main.js": "/edisigner/static/js/main.90c8cdd7.js",
     "static/media/4.JPG": "/edisigner/static/media/4.87c12a912842807e2f0d.JPG",
     "static/media/5.JPG": "/edisigner/static/media/5.ff29be33ac69a3334d0c.JPG",
     "static/media/3.JPG": "/edisigner/static/media/3.570041446d7312dfaab5.JPG",
@@ -12,16 +12,16 @@
     "static/media/main_1.JPG": "/edisigner/static/media/main_1.16c6183f05dc0bc2f59b.JPG",
     "static/media/main_3.jpg": "/edisigner/static/media/main_3.21ed96d7506a620610d1.jpg",
     "static/media/mainContent.jpg": "/edisigner/static/media/mainContent.0498b6439af9064b3130.jpg",
-    "static/media/sprite.svg": "/edisigner/static/media/sprite.cf2cd1afd2e899acb2e08b2f085cf007.svg",
+    "static/media/sprite.svg": "/edisigner/static/media/sprite.e1a3703d715c3a037e6909e6c0ca1d66.svg",
     "static/media/revicons.eot": "/edisigner/static/media/revicons.a77de540a38981833f9e.eot",
     "static/media/revicons.ttf": "/edisigner/static/media/revicons.57fd05d4ae650374c8de.ttf",
     "static/media/revicons.woff": "/edisigner/static/media/revicons.e8746a624ed098489406.woff",
     "index.html": "/edisigner/index.html",
     "main.aee91a55.css.map": "/edisigner/static/css/main.aee91a55.css.map",
-    "main.0463e4a4.js.map": "/edisigner/static/js/main.0463e4a4.js.map"
+    "main.90c8cdd7.js.map": "/edisigner/static/js/main.90c8cdd7.js.map"
   },
   "entrypoints": [
     "static/css/main.aee91a55.css",
-    "static/js/main.0463e4a4.js"
+    "static/js/main.90c8cdd7.js"
   ]
 }
