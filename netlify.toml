@@ -1,7 +1,9 @@
 [build]
 command="npm run build"
-publish="/build"
-base="/"
+publish="/opt/build/repo/build"
+base="/opt/build/repo"
+commandOrigin= "config"
+publishOrigin= "config"
 
 
 
