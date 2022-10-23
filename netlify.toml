@@ -1,5 +1,7 @@
 [build]
-publish="build"
+commsnd="npm run build"
+publish="/build"
+base="/"
 
 [[redirects]]
 from="/*"
