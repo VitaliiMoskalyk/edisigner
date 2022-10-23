@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import pict from "./37.jpg";
+import pict from "./mainContent.jpg";
 
 export const Wrapper = styled.div`
   display: flex;
@@ -7,13 +7,8 @@ export const Wrapper = styled.div`
   flex-direction: column;
   justify-content: center;
 
-  /* background-image: url(${pict});
-  background-repeat: no-repeat;
-
-  background-size: cover;
-  background-position: center; */
-
-  height: 100vh;
+  width: 100vw;
+  height: 90vh;
 
   padding: 10px;
 
@@ -23,8 +18,24 @@ export const Wrapper = styled.div`
   line-height: 29px;
   text-align: right;
 
+  color: #fff;
+
+  background-image: url(${pict});
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: bottom;
+  /* transition: background-position ease-in 30s; */
+
+  :hover,
+  :focus {
+    /* background-position: bottom; */
+
+    /* transition: background-position ease-in 30s; */
+  }
+
   @media (min-width: 768px) {
     /* height: 960px; */
+    /* height: 85vh; */
 
     font-size: 36px;
     line-height: 44px;
@@ -37,7 +48,23 @@ export const Wrapper = styled.div`
   }
 `;
 
+export const Article = styled.p`
+  /* text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  transition: text-shadow ease-in 2s;
+  :hover,
+  :focus {
+    text-shadow: 0px 40px 40px rgba(0, 0, 0, 0.9);
+    transition: text-shadow ease-in 2s;
+  } */
+
+  @media (min-width: 1440px) {
+    max-width: 75%;
+    padding: 40px;
+  }
+`;
+
 export const Author = styled.span`
+  font-family: "Gloria Hallelujah", cursive;
   font-size: 12px;
   line-height: 15px;
   text-align: right;
@@ -52,11 +79,6 @@ export const Author = styled.span`
     font-size: 24px;
     line-height: 29px;
     margin-top: 30px;
-  }
-`;
-
-export const Article = styled.p`
-  @media (min-width: 1440px) {
-    max-width: 75%;
+    padding: 40px;
   }
 `;

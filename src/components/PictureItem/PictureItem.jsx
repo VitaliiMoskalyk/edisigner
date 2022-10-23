@@ -1,37 +1,17 @@
-import { Image } from "antd";
-import { useState } from "react";
-import "../../index.css";
-import { Photo, PhotoWrapper, MainImgWrapper } from "./ProjectItem.styled";
+import ImageListItemBar from "@mui/material/ImageListItemBar";
 
-export const PictureItem = ({ data }) => {
-  const [visible, setVisible] = useState(false);
-
+export const PictureItem = ({ src, title, onClick }) => {
   return (
-    <PhotoWrapper>
-      <MainImgWrapper>
-        <Photo
-          preview={{
-            visible: false,
-          }}
-          src={data.photo}
-          onClick={() => setVisible(true)}
-          loading="lazy"
-        />
-        <p>{data.title}</p>
-      </MainImgWrapper>
-      <div style={{ display: "none" }}>
-        <Image.PreviewGroup
-          preview={{
-            visible,
-
-            onVisibleChange: (vis) => setVisible(vis),
-          }}
-        >
-          {data.collection.map((i, id) => (
-            <Photo src={i} key={id} />
-          ))}
-        </Image.PreviewGroup>
-      </div>
-    </PhotoWrapper>
+    <>
+      <img
+        src={src}
+        // srcSet={`${item.img}?w=248&fit=crop&auto=format&dpr=2 2x`}
+        alt="design project"
+        loading="lazy"
+        onClick={onClick}
+        width="100%"
+      />
+      {title && <ImageListItemBar title={title} />}
+    </>
   );
 };

@@ -11,27 +11,19 @@ export const Nav = styled.nav`
 export const Wrapper = styled.ul`
   display: flex;
   justify-content: space-around;
-  flex-wrap: wrap;
   flex-direction: column;
+  align-items: center;
 
-  margin: 0;
+  height: 100vh;
 
   @media (min-width: 768px) {
     flex-direction: row;
-  }
-  li {
-    display: flex;
-    justify-content: flex-end;
-    margin-top: 60px;
-    @media (min-width: 768px) {
-      margin-top: 0;
-    }
+    height: auto;
   }
 `;
 
 export const NavigateLink = styled(Link)`
   color: inherit;
-
   font-style: italic;
   font-weight: 500;
   font-size: 24px;

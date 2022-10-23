@@ -1,11 +1,11 @@
 import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Contacts, ErrorPage, Header, MainContent, Projects } from "./pages";
+import { Contacts, ErrorPage, MainContent, Projects } from "./pages";
 
 const router = createBrowserRouter(
   [
     {
       path: "/",
-      element: <Header />,
+      // element: <ErrorPage />,
       errorElement: <ErrorPage />,
 
       children: [
@@ -16,6 +16,7 @@ const router = createBrowserRouter(
         {
           path: "/projects",
           element: <Projects />,
+          children: [{ path: ":id", element: null }],
         },
         {
           path: "/contacts",

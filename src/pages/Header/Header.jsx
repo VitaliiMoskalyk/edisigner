@@ -7,33 +7,58 @@ import { Navigation } from "../../components/Navigation/Navigation";
 import { Outlet } from "react-router";
 import { useState } from "react";
 import { Modal } from "../../components/Modal/Modal";
+import { useSpring, animated } from "react-spring";
 // import { Contacts } from "../Contacts/Contacts";
 
 export const Header = () => {
   const screenWidth = useWindowWidth();
-  const [isOpen, setIsOpen] = useState(false);
+  const [isOpen, setIsOpen] = useState();
+
+  const props = useSpring({
+    to: { rotateZ: 0 },
+    from: { rotateZ: 360 },
+    reset: true,
+    delay: 0,
+  });
+  // const props2 = useSpring({
+  //   to: { rotateY: 0 },
+  //   from: { rotateY: 360 },
+  //   reset: true,
+  //   delay: 17000,
+  //   loop: { reverse: true },
+  //   config: {
+  //     duration: 1000,
+  //     easing: easings.easeInSine,
+  //   },
+  // });
 
   return (
     <>
       <Wrapper isOpen={isOpen}>
-        <Logo title="EvgDesigner" />
-        {screenWidth > 768 ? (
+        <animated.div style={{ display: "flex" }}>
+          <Logo title="EvgDesigner"></Logo>
+        </animated.div>
+        {screenWidth >= 768 ? (
           <Navigation />
         ) : isOpen ? (
-          <Svg
-            icon="icon-close"
-            width="48"
-            height="42"
-            fill="#000"
-            onClick={() => setIsOpen(!isOpen)}
-          />
+          <animated.div style={props}>
+            <Svg
+              icon="icon-close"
+              width="48"
+              height="42"
+              fill="#000"
+              onClick={() => setIsOpen(!isOpen)}
+            />
+          </animated.div>
         ) : (
-          <Svg
-            icon="icon-menu-right"
-            width="48"
-            height="42"
-            onClick={() => setIsOpen(!isOpen)}
-          />
+          <animated.div style={props}>
+            <Svg
+              icon="icon-menu-right"
+              width="48"
+              height="42"
+              onClick={() => setIsOpen(!isOpen)}
+            />
+          </animated.div>
         )}
       </Wrapper>
       {isOpen && (

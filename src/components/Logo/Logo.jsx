@@ -13,7 +13,7 @@ export const Logo = ({ title }) => {
 
   return (
     <LinkTo to="/">
-      <Title>{screenWidth > 768 ? full : upper[0] ? upper : title[0]}</Title>
+      <Title>{screenWidth >= 768 ? full : upper[0] ? upper : title[0]}</Title>
     </LinkTo>
   );
 };

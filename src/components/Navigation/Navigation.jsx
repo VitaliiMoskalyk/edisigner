@@ -10,7 +10,9 @@ export const Navigation = ({ onClose }) => {
             Проєкти
           </NavigateLink>
         </li>
-        <Contacts />
+        <li>
+          <Contacts />
+        </li>
         {/* <li>
           <NavigateLink to="/contacts" onClick={onClose}>
             Зв’язок

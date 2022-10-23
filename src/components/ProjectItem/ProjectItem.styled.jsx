@@ -2,7 +2,7 @@ import styled from "@emotion/styled";
 
 export const Position = styled.div`
   position: relative;
-  margin-bottom: 20px;
+  margin: 100px 20px;
 `;
 
 export const Overlay = styled.div`

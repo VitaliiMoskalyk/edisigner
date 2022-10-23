@@ -6,18 +6,16 @@ export const Section = styled.section`
 `;
 
 export const Box = styled.div`
-  padding: 42px 25px;
-  min-width: 375px;
-
+  padding: 0 25px;
   margin-left: auto;
   margin-right: auto;
 
   @media (min-width: 768px) {
-    padding: 59px 40px;
+    padding: 0 40px;
     min-width: 768px;
   }
   @media (min-width: 1440px) {
-    padding: 119px 100px;
+    padding: 0 100px;
     min-width: 1440px;
   }
 `;
