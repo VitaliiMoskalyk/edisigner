@@ -7,7 +7,9 @@
 body {
   margin: 0;
   font-family: 'Inter', sans-serif !important;
+  overflow-x: hidden;
   overflow-y: scroll;
+  
 } 
 
 code {
@@ -70,6 +72,9 @@ section {
   display: block;
 }
 
+figure{
+  margin: 0;
+}
 body {
   line-height: 1;
 }

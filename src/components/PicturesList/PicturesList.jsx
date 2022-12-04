@@ -16,14 +16,15 @@ export const PicturesList = ({ data, title, variant, f }) => {
         cols={
           screenWidth >= 1440
             ? 4
-            : screenWidth >= 768
+            : screenWidth >= 1200
             ? 3
-            : screenWidth >= 400
+            : screenWidth >= 600
             ? 2
             : 1
         }
         variant={variant}
         gap={20}
+        style={{ overflow: "hidden" }}
       >
         {data.map((item, id) => (
           <ImageListItem style={{ height: "fit-content" }} key={id}>
@@ -38,7 +39,6 @@ export const PicturesList = ({ data, title, variant, f }) => {
                 })
               }
             />
-            {/* (() => f(item.collection)) */}
           </ImageListItem>
         ))}
       </ImageList>

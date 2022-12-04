@@ -1,35 +1,32 @@
-import { createBrowserRouter, RouterProvider } from "react-router-dom";
-import { Contacts, ErrorPage, MainContent, Projects } from "./pages";
-
-const router = createBrowserRouter(
-  [
-    {
-      path: "/",
-      // element: <ErrorPage />,
-      errorElement: <ErrorPage />,
-
-      children: [
-        {
-          index: true,
-          element: <MainContent />,
-        },
-        {
-          path: "/projects",
-          element: <Projects />,
-          children: [{ path: ":id", element: null }],
-        },
-        {
-          path: "/contacts",
-          element: <Contacts />,
-        },
-      ],
-    },
-  ],
-  { basename: "/edisigner" }
-);
+import { lazy, useEffect } from "react";
+import { Route, Routes, useLocation } from "react-router-dom";
+import { useSpring, animated } from "react-spring";
+const MainContent = lazy(() => import("./pages/MainContent/MainContent"));
+const Projects = lazy(() => import("./pages/Projects/Projects"));
 
 function App() {
-  return <RouterProvider router={router} fallbackElement={<h1>fallback</h1>} />;
+  const location = useLocation();
+
+  useEffect(() => {}, [location]);
+
+  const style = useSpring({
+    from: { opacity: 0.3 },
+    to: { opacity: 1 },
+    reset: true,
+    config: { duration: 400 },
+  });
+
+  return (
+    <animated.div style={style}>
+      <Routes path="/">
+        <Route index element={<MainContent />} />
+        <Route path="/projects" element={<Projects />}>
+          <Route path=":id" element />
+        </Route>
+        <Route path="*" element={<MainContent />} />
+      </Routes>
+    </animated.div>
+  );
 }
 
 export default App;

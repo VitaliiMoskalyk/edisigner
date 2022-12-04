@@ -3,14 +3,12 @@ import { Logo } from "../../components/Logo/Logo";
 import { Wrapper } from "./Header.styled";
 import { useWindowWidth } from "@react-hook/window-size";
 import { Navigation } from "../../components/Navigation/Navigation";
-// import { Container } from "../../components/Container/Container";
 import { Outlet } from "react-router";
 import { useState } from "react";
 import { Modal } from "../../components/Modal/Modal";
 import { useSpring, animated } from "react-spring";
-// import { Contacts } from "../Contacts/Contacts";
 
-export const Header = () => {
+const Header = () => {
   const screenWidth = useWindowWidth();
   const [isOpen, setIsOpen] = useState();
 
@@ -31,7 +29,6 @@ export const Header = () => {
   //     easing: easings.easeInSine,
   //   },
   // });
-
   return (
     <>
       <Wrapper isOpen={isOpen}>
@@ -73,12 +70,12 @@ export const Header = () => {
               setIsOpen(false);
             }}
           />
-          {/* <Contacts /> */}
         </Modal>
       )}
-      {/* <Container> */}
+
       <Outlet />
-      {/* </Container> */}
     </>
   );
 };
+
+export default Header;

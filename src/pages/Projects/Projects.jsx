@@ -4,14 +4,15 @@ import { data2 } from "../../data/myProjects";
 import "../../index.css";
 import { PicturesList } from "../../components/PicturesList/PicturesList";
 import { Container } from "../../components/Container/Container";
-import { Header } from "../Header/Header";
-import { useState } from "react";
+
+import { lazy, useState } from "react";
 import { useLocation, useNavigate } from "react-router";
 import { useEffect } from "react";
 import Svg from "../../utils/Svg/Svg";
 import { useWindowWidth } from "@react-hook/window-size";
+const Header = lazy(() => import("../Header/Header"));
 
-export const Projects = () => {
+const Projects = () => {
   const useWidth = useWindowWidth();
   const [arr, setArr] = useState(null);
   const location = useLocation();
@@ -27,10 +28,8 @@ export const Projects = () => {
       /> */}
       {/* <ProjectsNavigation /> */}
       {/* <MainList data={data2} position="right" /> */}
-
+      <Header />
       <Container>
-        <Header />
-
         {location.pathname !== "/projects" && arr != null && (
           <>
             {useWidth <= 768 && (
@@ -55,3 +54,5 @@ export const Projects = () => {
     </>
   );
 };
+
+export default Projects;

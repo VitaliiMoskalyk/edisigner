@@ -10,6 +10,7 @@ export const Wrapper = styled.header`
   justify-content: space-between;
   align-items: center;
   width: 100%;
+  height: auto;
   padding: 0 25px;
 
   color: inherit;
@@ -21,9 +22,18 @@ export const Wrapper = styled.header`
     rgba(255, 255, 255, 0.5) 99%
   );
 
+  padding: 0 25px;
+  margin-left: auto;
+  margin-right: auto;
+
   @media (min-width: 768px) {
     position: sticky;
     top: -1px;
-    padding: 30px 0;
+    padding: 30px 40px;
+    min-width: 768px;
+  }
+  @media (min-width: 1440px) {
+    padding: 30px 100px;
+    min-width: 1440px;
   }
 `;

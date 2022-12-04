@@ -2,13 +2,14 @@ import styled from "@emotion/styled";
 
 export const Position = styled.div`
   position: relative;
-  margin: 100px 20px;
+  margin: 100px 0;
 `;
 
 export const Overlay = styled.div`
   display: flex;
   align-items: center;
-  height: 250px;
+
+  /* height: 250px; */
 
   overflow: hidden;
 
@@ -20,21 +21,21 @@ export const Overlay = styled.div`
   }
 
   @media (min-width: 768px) {
-    height: 320px;
+    /* height: 320px; */
   }
   @media (min-width: 1440px) {
-    height: 580px;
+    /* height: 580px; */
   }
 `;
 
 export const Img = styled.img`
-  width: 420px;
+  width: 400px;
 
   @media (min-width: 768px) {
-    width: 534px;
+    width: 734px;
   }
   @media (min-width: 1440px) {
-    width: 640px;
+    width: 940px;
   }
 `;
 
@@ -63,30 +64,29 @@ export const Discription = styled.p`
   line-height: 16px;
   max-width: 80%;
 
-  @media (min-width: 768px) {
-    position: absolute;
-    z-index: 1;
-    top: 10%;
+  position: absolute;
+  z-index: 1;
+  top: 80%;
 
+  ${(props) => props.left}&& {
+    right: 0;
+    background: rgba(1, 1, 1, 0.6);
+    backdrop-filter: blur(2px);
+    color: #ffffff;
+  }
+  ${(props) => props.right}&& {
+    left: 0;
+    background: rgba(255, 252, 252, 0.6);
+    backdrop-filter: blur(2px);
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+  }
+  @media (min-width: 768px) {
     max-width: 560px;
     padding: 20px 10px 20px 20px;
 
     font-size: 24px;
     line-height: 29px;
     text-align: center;
-
-    ${(props) => props.left}&& {
-      right: 0;
-      background: rgba(1, 1, 1, 0.6);
-      backdrop-filter: blur(2px);
-      color: #ffffff;
-    }
-    ${(props) => props.right}&& {
-      left: 0;
-      background: rgba(255, 252, 252, 0.6);
-      backdrop-filter: blur(2px);
-      text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
-    }
   }
 
   @media (min-width: 1440px) {

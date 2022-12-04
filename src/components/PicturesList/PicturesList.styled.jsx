@@ -4,6 +4,7 @@ export const Wrapper = styled.div`
   /* display: flex;
   flex-wrap: wrap;
   justify-content: center; */
+
   margin-top: 60px;
   @media (min-width: 768px) {
     margin-top: 40px;
