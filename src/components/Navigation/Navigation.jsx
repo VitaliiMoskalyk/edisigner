@@ -1,5 +1,5 @@
-import { Contacts } from "../../pages";
 import { Wrapper, Nav, NavigateLink } from "./Navigation.styled";
+import { Contacts } from "../Contacts/Contacts";
 
 export const Navigation = ({ onClose }) => {
   return (
@@ -10,14 +10,14 @@ export const Navigation = ({ onClose }) => {
             Проєкти
           </NavigateLink>
         </li>
+        {/* <li>
+          <NavigateLink to="/about" onClick={onClose}>
+            Про мене
+          </NavigateLink>
+        </li> */}
         <li>
           <Contacts />
         </li>
-        {/* <li>
-          <NavigateLink to="/contacts" onClick={onClose}>
-            Зв’язок
-          </NavigateLink>
-        </li> */}
       </Wrapper>
     </Nav>
   );

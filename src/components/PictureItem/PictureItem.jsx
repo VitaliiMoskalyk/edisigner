@@ -1,4 +1,5 @@
-import ImageListItemBar from "@mui/material/ImageListItemBar";
+import BubbleItem from "../BubbleItem/BubbleItem";
+import { TitleBlock, Wrapper } from "./PictureItem.styled";
 
 export const PictureItem = ({ src, title, onClick }) => {
   return (
@@ -16,9 +17,11 @@ export const PictureItem = ({ src, title, onClick }) => {
       </picture>
 
       {title && (
-        <figcaption>
-          <ImageListItemBar title={title} />
-        </figcaption>
+        <TitleBlock onClick={onClick}>
+          <Wrapper>
+            <BubbleItem focus="false">{title}</BubbleItem>
+          </Wrapper>
+        </TitleBlock>
       )}
     </figure>
   );

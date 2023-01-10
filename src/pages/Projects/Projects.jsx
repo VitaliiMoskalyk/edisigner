@@ -1,5 +1,3 @@
-// import { ProjectsNavigation } from "../../components/ProjectsNavigation/ProjectsNavigation";
-// import { Quote } from "../../components/Quote/Quote";
 import { data2 } from "../../data/myProjects";
 import "../../index.css";
 import { PicturesList } from "../../components/PicturesList/PicturesList";
@@ -8,9 +6,9 @@ import { Container } from "../../components/Container/Container";
 import { lazy, useState } from "react";
 import { useLocation, useNavigate } from "react-router";
 import { useEffect } from "react";
-import Svg from "../../utils/Svg/Svg";
+import Svg from "../../components/Svg/Svg";
 import { useWindowWidth } from "@react-hook/window-size";
-const Header = lazy(() => import("../Header/Header"));
+const Header = lazy(() => import("../../components/Header/Header"));
 
 const Projects = () => {
   const useWidth = useWindowWidth();
@@ -22,12 +20,6 @@ const Projects = () => {
   }, []);
   return (
     <>
-      {/* <Quote
-        quote="«У хорошому дизайні функціональність завжди є первинною, незалежно від форм. Але вона не повинна гнобити емоції»"
-        author="Giorgio Saporiti"
-      /> */}
-      {/* <ProjectsNavigation /> */}
-      {/* <MainList data={data2} position="right" /> */}
       <Header />
       <Container>
         {location.pathname !== "/projects" && arr != null && (

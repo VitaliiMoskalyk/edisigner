@@ -11,6 +11,7 @@ export const Layout = styled.div`
 `;
 
 export const Wrapper = styled.div`
+  /* position: relative; */
   width: 100%;
   height: ${window.screen.availHeight}px;
   background: #e1d9d6 url(${wall_mobile}) right/cover;
@@ -26,6 +27,7 @@ export const Wrapper = styled.div`
 
 export const MenuBlock = styled.div`
   position: absolute;
+
   z-index: 1;
   margin-left: 20px;
   margin-top: 70px;

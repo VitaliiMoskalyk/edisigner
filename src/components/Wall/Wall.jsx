@@ -1,7 +1,9 @@
 import { Wrapper, Layout, MenuBlock } from "./Wall.styled";
 import { useSpring, animated, easings } from "react-spring";
+import { useWindowWidth } from "@react-hook/window-size";
 
 export const Wall = ({ children }) => {
+  const windowWidth = useWindowWidth();
   const props = useSpring({
     to: [
       { scale: 1.08, x: 20 },
@@ -23,7 +25,8 @@ export const Wall = ({ children }) => {
 
   return (
     <Layout>
-      <MenuBlock>{children}</MenuBlock>
+      {windowWidth >= 768 && <MenuBlock>{children}</MenuBlock>}
+
       <animated.div style={props}>
         <Wrapper />
       </animated.div>

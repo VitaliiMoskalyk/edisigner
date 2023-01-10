@@ -1,12 +1,13 @@
 import {
   BubbleWrapper,
   FirstBubble,
+  NavigateLink,
   SecondBubble,
   ThirdBubble,
 } from "./BubbleItem.styled";
 import { useSpring, animated, easings } from "react-spring";
 
-const BubbleItem = ({ children }) => {
+const BubbleItem = ({ children, focus }) => {
   const props = useSpring({
     to: [
       { x: 60, y: 35, scale: 1.5 },
@@ -17,7 +18,7 @@ const BubbleItem = ({ children }) => {
     reset: true,
     loop: true,
 
-    delay: 1000,
+    delay: 0,
     config: {
       duration: 8000,
       easing: easings.easeInQuad,
@@ -61,12 +62,13 @@ const BubbleItem = ({ children }) => {
       <animated.div style={props}>
         <FirstBubble />
       </animated.div>
+
       <animated.div style={props2}>
         <SecondBubble />
       </animated.div>
       <animated.div style={props3}>
-        <ThirdBubble>
-          <div>{children}</div>
+        <ThirdBubble focus={focus}>
+          <NavigateLink>{children}</NavigateLink>
         </ThirdBubble>
       </animated.div>
     </BubbleWrapper>

@@ -1,9 +1,9 @@
-import collection2_1 from "../images/lermontovskiy/1.JPG";
-import collection2_2 from "../images/lermontovskiy/2.JPG";
-import collection2_3 from "../images/lermontovskiy/3.JPG";
-import collection2_4 from "../images/lermontovskiy/4.JPG";
-import collection2_5 from "../images/lermontovskiy/5.JPG";
-import collection2_6 from "../images/lermontovskiy/6.JPG";
+// import collection2_1 from "../images/lermontovskiy/1.JPG";
+// import collection2_2 from "../images/lermontovskiy/2.JPG";
+// import collection2_3 from "../images/lermontovskiy/3.JPG";
+// import collection2_4 from "../images/lermontovskiy/4.JPG";
+// import collection2_5 from "../images/lermontovskiy/5.JPG";
+// import collection2_6 from "../images/lermontovskiy/6.JPG";
 
 export const data2 = [
   {
@@ -17,17 +17,17 @@ export const data2 = [
       "https://i.pinimg.com/originals/0a/aa/cc/0aaacc98b973b2daefda56e46f39cf2f.jpg",
     ],
   },
-  {
-    title: "Ланжерон",
-    collection: [
-      // collection2_1,
-      collection2_2,
-      collection2_3,
-      collection2_4,
-      collection2_5,
-      collection2_6,
-    ],
-  },
+  // {
+  //   title: "Ланжерон",
+  //   collection: [
+  //     // collection2_1,
+  //     collection2_2,
+  //     collection2_3,
+  //     collection2_4,
+  //     collection2_5,
+  //     collection2_6,
+  //   ],
+  // },
   {
     title: "Мукачівський",
     collection: [

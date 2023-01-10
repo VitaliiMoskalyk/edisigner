@@ -1,4 +1,4 @@
-import Svg from "../../utils/Svg/Svg";
+import Svg from "../Svg/Svg";
 import { Logo } from "../../components/Logo/Logo";
 import { Wrapper } from "./Header.styled";
 import { useWindowWidth } from "@react-hook/window-size";
@@ -7,6 +7,7 @@ import { Outlet } from "react-router";
 import { useState } from "react";
 import { Modal } from "../../components/Modal/Modal";
 import { useSpring, animated } from "react-spring";
+import { Parallax } from "react-scroll-parallax";
 
 const Header = () => {
   const screenWidth = useWindowWidth();
@@ -33,7 +34,9 @@ const Header = () => {
     <>
       <Wrapper isOpen={isOpen}>
         <animated.div style={{ display: "flex" }}>
-          <Logo title="EvgDesigner"></Logo>
+          <Parallax translateX={[50, 0]}>
+            <Logo title="Evg Designer "></Logo>
+          </Parallax>
         </animated.div>
         {screenWidth >= 768 ? (
           <Navigation />

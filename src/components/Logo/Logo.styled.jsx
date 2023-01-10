@@ -14,10 +14,6 @@ export const Title = styled.span`
   margin: 0;
   letter-spacing: normal;
   font-weight: 300;
-  font-size: 35px;
+  font-size: 24px;
   color: inherit;
-`;
-
-export const Upper = styled.span`
-  font-weight: 900;
 `;
