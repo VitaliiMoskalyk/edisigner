@@ -1,3 +1,50 @@
+<!-- Обложка -->
+<p align="center">
+  <img src="docs/logo.png" alt="Logo" width="200"/>
+</p>
+
+<h1 align="center">🚀 My Awesome Project</h1>
+
+<p align="center">
+  Современный шаблон README с ❤️ для GitHub
+  <br/>
+  <a href="#-документация"><strong>Посмотреть документацию »</strong></a>
+  <br/><br/>
+  <a href="https://github.com/username/repo/issues">Сообщить о баге</a>
+  ·
+  <a href="https://github.com/username/repo/issues">Предложить фичу</a>
+</p>
+
+---
+
+## 📊 Бейджи
+
+![Build](https://img.shields.io/badge/build-passing-brightgreen)
+![License](https://img.shields.io/badge/license-MIT-blue)
+![Version](https://img.shields.io/badge/version-1.0.0-orange)
+![Stars](https://img.shields.io/github/stars/username/repo?style=social)
+
+---
+
+## ✨ Возможности
+
+- 🔥 Быстрый
+- 🛠 Легко кастомизируется
+- 🌍 Поддержка i18n
+- 📦 Установка за 1 минуту
+
+---
+
+## 📦 Установка
+
+```bash
+git clone https://github.com/username/repo.git
+cd repo
+npm install
+npm start
+
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
