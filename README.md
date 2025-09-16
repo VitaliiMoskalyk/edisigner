@@ -10,40 +10,19 @@
   <br/>
   <a href="#-документация"><strong>Посмотреть документацию »</strong></a>
   <br/><br/>
-  <a href="https://github.com/username/repo/issues">Сообщить о баге</a>
+  <a href="https://github.com/VitaliiMoskalyk/repo/issues">Сообщить о баге</a>
   ·
-  <a href="https://github.com/username/repo/issues">Предложить фичу</a>
+  <a href="https://github.com/VitaliiMoskalyk/repo/issues">Предложить фичу</a>
 </p>
 
 ---
 
-## 📊 Бейджи
-
-![Build](https://img.shields.io/badge/build-passing-brightgreen)
-![License](https://img.shields.io/badge/license-MIT-blue)
-![Version](https://img.shields.io/badge/version-1.0.0-orange)
-![Stars](https://img.shields.io/github/stars/username/repo?style=social)
-
----
-
-## ✨ Возможности
-
-- 🔥 Быстрый
-- 🛠 Легко кастомизируется
-- 🌍 Поддержка i18n
-- 📦 Установка за 1 минуту
+## ✨ Макет для вдохновения
+https://www.figma.com/proto/5OIBPF48iNIaSr1rzm3Gbw/Premium-Interior-Design-Landing-Page--Free---Community-?page-id=2%3A2&node-id=18-431&starting-point-node-id=18%3A26&t=q5cqeEI0JVlj74GT-1
 
 ---
 
 ## 📦 Установка
-
-```bash
-git clone https://github.com/username/repo.git
-cd repo
-npm install
-npm start
-
-
 
 # Getting Started with Create React App
 
